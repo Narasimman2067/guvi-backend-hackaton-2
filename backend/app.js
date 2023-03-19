@@ -28,6 +28,9 @@ app.use("/",(err,req,res,next)=>{
     res.status(200).send("operation success")
     });
 
+    app.get("/",(err,req,res)=>{
+        res.status(200).send("operation success")
+        });
 
 app.listen(9000,()=>{
     console.log('9000 server connected succesfully')
